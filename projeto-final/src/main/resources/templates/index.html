@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>UCSAL</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            color: #333;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        h3 {
+            color: #666;
+        }
+        a {
+            display: block;
+            margin-bottom: 10px;
+            color: #000;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sistema de Controle do Quadro de Horário Acadêmico - Engenharia de Software</h2>
+    <p>Bem-vindo ao nosso sistema de controle acadêmico. Aqui, você pode gerenciar estudantes, professores e disciplinas.</p>
+    <hr>
+    <h3>Estudantes</h3>
+    <a href="/cadastrarEstudantes"> > Cadastrar novo estudante</a>   
+    <a href="/listarEstudantes"> > Listar estudantes</a>
+    <a href="/atualizarEstudantes"> > Atualizar estudante</a>
+    <hr>
+    <h3>Professores</h3>
+    <a href="/cadastrarProfessores"> > Cadastrar novo professor</a>   
+    <a href="/listarProfessores"> > Listar professores</a>
+    <a href="/atualizarProfessores"> > Atualizar professor</a>
+    <hr>
+    <h3>Disciplinas</h3>
+    <a href="/cadastrarDisciplina"> > Cadastrar disciplina</a>  
+    <a href="/listarDisciplina"> > Listar disciplinas</a>
+   <a href="/atualizarDisciplina"> > Atualizar disciplina</a>
+</body>
+</html>

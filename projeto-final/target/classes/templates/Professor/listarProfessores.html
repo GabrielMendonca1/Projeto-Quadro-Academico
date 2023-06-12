@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>Exemplo Spring Boot</title>
+</head>
+<body>
+    <h3>Lista de Professores</h3>
+    <p>ID&emsp;&emsp;Nome&emsp;&emsp;Email&emsp;&emsp;Ano Egresso</p>
+    <hr>
+    <div th:each="professor : ${professores}">
+        <div class="row">
+            <p>
+                <span th:text="${professor.id}"></span>&emsp;
+                <span th:text="${professor.nome}"></span>&emsp;
+                <span th:text="${professor.email}"></span>&emsp;
+                <span th:text="${professor.anoEgresso}"></span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
